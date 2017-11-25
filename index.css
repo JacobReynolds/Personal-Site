@@ -78,6 +78,9 @@ select option {
     .inner {
       width: 90vw;
     }
+    #mainPic  {
+      max-height: 250px;
+    }
     h2 {
       font-size: 20px;
     }
