@@ -74,15 +74,9 @@ select option {
   margin-right: auto;
   width: 50vw;
 }
-#mobile {
-  display: none;
-}
 @media (max-width: 500px) {
     .inner {
       width: 90vw;
-    }
-    #mobile {
-      display: block;
     }
     #mainPic  {
       max-height: 250px;
