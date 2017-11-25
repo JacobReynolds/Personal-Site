@@ -12,8 +12,11 @@ const professions = [
 ]
 //.slice copies the array
 var professionsTemp = professions.slice();
+$('#profession').hover(cycleProfession, () => {});
+$('#profession').click(cycleProfession);
+
 //Iterate through a temp array so each profession gets shown once before recycling.
-$('#profession').hover(() => {
+function cycleProfession() {
   if (professionsTemp.length === 0) {
     professionsTemp = professions.slice();
   }
@@ -21,7 +24,8 @@ $('#profession').hover(() => {
   const tempProf = professionsTemp[tempProfIndex];
   professionsTemp.splice(tempProfIndex, 1);
   $('#profession').html(tempProf);
-}, () => {})
+}
+
 
 //Shake it to imply hover effect
 setTimeout(() => {
