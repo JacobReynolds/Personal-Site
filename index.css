@@ -21,6 +21,8 @@ body {
   max-width: 400px;
   margin-left: auto;
   margin-right: auto;
+  cursor: hand;
+  cursor: pointer;
 }
 
 select:focus {
