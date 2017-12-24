@@ -6,15 +6,20 @@ body {
   min-width: 300px;
 }
 
-#mainPic {
+.mePic {
   height: 50vh;
   border-radius: 10px;
 }
+
 
 .styledSelect {
   border-radius: 3px;
   height: 34px;
   font-size: 20px;
+}
+
+.peekaboo {
+  position: fixed;
 }
 
 #profession {
@@ -93,7 +98,7 @@ select option {
   .inner {
     width: 90vw;
   }
-  #mainPic {
+  .mePic {
     max-height: 400px;
   }
   h2 {
