@@ -4,6 +4,7 @@ body {
   font-family: 'Titillium Web', sans-serif;
   font-weight: 200;
   min-width: 300px;
+  overflow-x: hidden;
 }
 
 .mePic {
