@@ -1,4 +1,4 @@
-setTimeout(function(){
+setTimeout(function() {
  $('#profession').effect('shake', 2)
 }, 2000)
 
@@ -24,7 +24,7 @@ $('#profession').hover(cycleProfession, () => {});
 $('#profession').click(cycleProfession);
 //The first time profession is hovered, make the main pic shake
 $('#profession').one("mouseenter", function() {
-  setTimeout(function(){
+  setTimeout(function() {
    $('#mainPic').effect('shake', 2)
   }, 5000)
 })
