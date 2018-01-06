@@ -6,6 +6,9 @@ var peekabooHovered = false;
 function violentShake(id, delay, distance, hoverCheck) {
   delay *= 1.2;
   distance = distance * 2;
+  if (distance > 10) { //Set a max distance
+    distance=10;
+  }
   //If only IE supported arrow notation...
   setTimeout(function() {
     //Check if the shakee has been hovered.  If it has, stop looping.
