@@ -1,5 +1,5 @@
 setTimeout(function() {
- $('#profession').effect('shake', 2)
+ $('#profession').effect('shake', {distance:2})
 }, 2000)
 
 //List of "professions"
@@ -25,7 +25,7 @@ $('#profession').click(cycleProfession);
 //The first time profession is hovered, make the main pic shake
 $('#profession').one("mouseenter", function() {
   setTimeout(function() {
-   $('#mainPic').effect('shake', 2)
+   $('#mainPic').effect('shake', {distance:2})
   }, 5000)
 })
 
