@@ -1,25 +1,6 @@
-//Flags to identify if the element has been hovered on, this tells us to stop shaking
-var professionHovered = false;
-var peekabooHovered = false;
-//A function that continuously increases the shaking intensity and delay of an element.
-//Stops one the this[hoverCheck] variable is set to true
-function violentShake(id, delay, distance, hoverCheck) {
-  delay *= 1.2;
-  distance = distance * 2;
-  if (distance > 10) { //Set a max distance
-    distance=10;
-  }
-  //If only IE supported arrow notation...
-  setTimeout(function() {
-    //Check if the shakee has been hovered.  If it has, stop looping.
-    if (!window[hoverCheck]) {
-      $('#' + id).effect('shake', {distance})
-      violentShake(id, delay, distance, hoverCheck);
-    }
-  }, delay)
-}
-//Kick off the profession shake
-violentShake('profession', 2000, 2, 'professionHovered');
+setTimeout(function(){
+ $('#profession').effect('shake', 2)
+}, 2000)
 
 //List of "professions"
 const professions = [
@@ -41,17 +22,13 @@ var professionsTemp = professions.slice();
 $('#profession').hover(cycleProfession, () => {});
 //On click cycle the profession
 $('#profession').click(cycleProfession);
-//The first time profession is hovered, set the flag to true and begin main pic shake
+//The first time profession is hovered, make the main pic shake
 $('#profession').one("mouseenter", function() {
-  professionHovered = true;
-  setTimeout(function() {
-    violentShake('mainPic', 1000, 2, 'peekabooHovered')
-  }, 6000)
+  setTimeout(function(){
+   $('#mainPic').effect('shake', 2)
+  }, 5000)
 })
-//The first time main pic is hovered, set the flag to true.
-$('#mainPic').one('mouseenter', function() {
-  peekabooHovered = true;
-})
+
 //Iterate through a temp array so each profession gets shown once before recycling.
 function cycleProfession() {
   if (professionsTemp.length === 0) {
