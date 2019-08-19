@@ -9,9 +9,7 @@ const professions = [
   'Go-To Computer Guy',
   'Future Tech Billionaire',
   'Arduino Tinkerer',
-  'HAB Enthusiast',
   'Scuba Diver',
-  'Blogger',
   '&#9994; Unicode Lover',
   'Rock Climber',
   'Cybersecurity Researcher'
