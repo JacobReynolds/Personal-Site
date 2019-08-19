@@ -14,7 +14,7 @@ const professions = [
   'Blogger',
   '&#9994; Unicode Lover',
   'Rock Climber',
-  'Principal Security Consultant'
+  'Cybersecurity Researcher'
 ]
 //.slice copies the array by value
 var professionsTemp = professions.slice();
