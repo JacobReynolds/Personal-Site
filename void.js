@@ -1,4 +1,4 @@
-var socket = io('http://localhost:8080');
+var socket = io('https://void.jakereynolds.co');
 var id = 0;
 
 // Sends a chat message
@@ -22,11 +22,11 @@ $(".shout").keypress(function (e) {
 });
 
 socket.on('message', function (message) {
-	if (message=='peek') {
+	if (message.toLowerCase()=='peek') {
 		$('#mainPic').mouseenter();
-			setTimeout(()=>{
-				$('#mainPic').mouseleave();
-			},2000)
+		setTimeout(()=>{
+			$('#mainPic').mouseleave();
+		},2000)
 	} else {
 		thevoid(message);
 	}
