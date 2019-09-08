@@ -32,7 +32,9 @@ body {
   cursor: hand;
   cursor: pointer;
 }
-
+#name {
+  margin-top:0px;
+}
 select:focus {
   outline: none
 }
