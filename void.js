@@ -45,7 +45,7 @@ function thevoid(message) {
 	var echoWidth = getWidth($(echo).width());
 	//We need to set these before calculating overflow, because they can change the height/width
 	$(echo).css({
-		width: echoWidth,
+		maxWidth: echoWidth,
 		'font-size': fontSize
 	});
 	//Don't let text go off screen
@@ -58,6 +58,7 @@ function thevoid(message) {
 	if (yOverflow > 0) {
 		toY -= yOverflow;
 	}
+
 	//Animation sequence
 	$(echo).css({
 		top: fromY,
@@ -121,6 +122,11 @@ socket.on('new user', function () {
 socket.emit('count');
 
 socket.on('count',(count)=>{
-    console.log('Count: ' + count);
+	console.log('Count: ' + count);
+	if (count===1) {
+		$('#shout').attr('placeholder',`Say hello - You're the only online user`);
+	} else {
+		$('#shout').attr('placeholder',`Say hello - ${count} users online`);
+	}
 })
 

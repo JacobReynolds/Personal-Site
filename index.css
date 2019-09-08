@@ -10,6 +10,14 @@ body {
 .mePic {
   height: 50vh;
   border-radius: 10px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url("./me.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100%;
 }
 
 
