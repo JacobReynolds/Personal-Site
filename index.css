@@ -34,14 +34,16 @@ body {
   max-width: 400px;
   margin-left: auto;
   margin-right: auto;
-  margin-top:20px;
-  margin-bottom:20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   cursor: hand;
   cursor: pointer;
 }
+
 #name {
-  margin-top:0px;
+  margin-top: 0px;
 }
+
 select:focus {
   outline: none
 }
@@ -79,6 +81,13 @@ select option {
   height: 55px;
 }
 
+.social#readme {
+  width: 70px;
+  margin-left: 18px;
+  margin-right: 18px;
+  height: 70px;
+}
+
 .outer {
   display: table;
   position: absolute;
@@ -110,9 +119,11 @@ select option {
   .inner {
     width: 90vw;
   }
+
   .mePic {
     max-height: 400px;
   }
+
   h2 {
     font-size: 20px;
   }
