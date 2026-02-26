@@ -1,41 +1,66 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jake Reynolds</title>
+    <meta
+      name="description"
+      content="I'm a software developer by trade, currently living in the world of security research"
+    />
+    <meta name="theme-color" content="white" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body class="m-0 p-0 font-['Titillium_Web',sans-serif] font-normal min-w-[300px] overflow-x-hidden">
+    <main class="min-h-screen flex items-center justify-center text-center">
+      <div class="w-[50vw] max-sm:w-[90vw]">
+        <h2 class="mt-0 text-2xl max-sm:text-xl font-normal">jake reynolds</h2>
 
-<head>
-  <title>Jake Reynolds</title>
-  <meta name="description"
-    content="I'm a software developer by trade, currently living in the world of security research" />
-  <meta name="theme-color" content="white" />
-  <meta name="viewport" content="width=device-width" />
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-    integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <link rel="stylesheet" href="index.css?v1.1" />
-  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200,300" rel="stylesheet" type="text/css">
-</head>
+        <img
+          id="mainPic"
+          src="/me.png"
+          alt="Jake Reynolds"
+          class="rounded-lg w-full max-w-[400px] mx-auto cursor-pointer"
+        />
 
-<body>
-  <div class="outer">
-    <div class="middle">
-      <div class="inner">
-        <h2 id="name">jake reynolds</h2>
-        <div id="mainPic" class="mePic"></div>
-        <h2 class="noselect" id="profession">Hacker</h2>
-        <div>
-          <a href="https://the-hallway.jakereynolds.co" target="_blank"><img src="./readme.svg" class="social"
-              id="the-hallway" /></a>
-          <a href="https://github.com/JacobReynolds" target="_blank"><img src="./github.png" class="social" /></a>
-          <a href="https://linkedin.com/in/jreynoldsdev" target="_blank"><img src="./linkedin.png" class="social"
-              id="linkedIn" /></a>
-          <a href="https://wirespeed.co" target="_blank"><img src="./filled-with-background.png" class="social" id="misty" /></a>
+        <h2
+          id="profession"
+          class="max-w-[400px] mx-auto my-5 cursor-pointer select-none text-2xl max-sm:text-xl font-normal"
+        >
+          Hacker
+        </h2>
+
+        <div class="flex items-center justify-center gap-10">
+          <a href="https://the-hallway.jakereynolds.co" target="_blank" rel="noopener noreferrer">
+            <img src="/readme.svg" alt="The Hallway" class="w-16 h-16 hover:scale-110 transition-transform duration-300" />
+          </a>
+          <a href="https://github.com/JacobReynolds" target="_blank" rel="noopener noreferrer">
+            <img src="/github.png" alt="GitHub" class="w-16 h-16 hover:scale-110 transition-transform duration-300" />
+          </a>
+          <a href="https://linkedin.com/in/jreynoldsdev" target="_blank" rel="noopener noreferrer">
+            <img src="/linkedin.png" alt="LinkedIn" class="w-16 h-[55px] hover:scale-110 transition-transform duration-300" />
+          </a>
+          <a href="https://wirespeed.co" target="_blank" rel="noopener noreferrer">
+            <img src="/filled-with-background.png" alt="Wirespeed" class="w-16 h-16 hover:scale-110 transition-transform duration-300" />
+          </a>
         </div>
       </div>
-    </div>
-  </div>
-</body>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.slim.js"></script>
-<script src="./index.js?v1.1"></script>
+    </main>
 
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
