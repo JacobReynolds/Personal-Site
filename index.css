@@ -8,9 +8,10 @@ body {
 }
 
 .mePic {
-  height: 50vh;
+  height: auto;
   border-radius: 10px;
-  width: 300px;
+  width: 400px;
+  max-width: 90vw;
   margin-left: auto;
   margin-right: auto;
   background: url("./me.png");
